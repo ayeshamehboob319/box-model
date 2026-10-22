@@ -20,6 +20,32 @@
             padding: 15px;
         }
 
+        #links-box {
+            width: 450px;
+            margin: 20px auto 0;
+            padding: 15px;
+            background-color: #C8E6C9;
+            border: 2px solid #228B22;
+            border-radius: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        #links-box a {
+            display: inline-block;
+            color: white;
+            background-color: #228B22;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        #links-box a:hover {
+            background-color: #006400;
+        }
+
         #login-box {
             width: 500px;
             margin: 30px auto;
@@ -92,11 +118,11 @@
         <small>Welcome to My Website</small>
     </div>
 
-    <p style="text-align: center;">
-        <a href="login.html">Login</a> |
-        <a href="register.html">Register</a> |
+    <div id="links-box">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
         <a href="thankyou.html">Thank You</a>
-    </p>
+    </div>
 
     <div id="login-box">
         <div class="heading">
