@@ -1,20 +1,96 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>User Login</title>
-    <link rel="stylesheet" href="green.css">
+
+    <style>
+        body {
+            background-color: #E8F5E9;
+            margin: 0;
+            font-family: Arial;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        #login-box {
+            width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #228B22;
+            box-sizing: border-box;
+        }
+
+        .heading {
+            text-align: center;
+            color: #228B22;
+            font-family: Georgia;
+        }
+
+        .form-row {
+            width: 100%;
+            margin: 25px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-row b {
+            width: 150px;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        .form-row input {
+            width: 220px;
+            height: 32px;
+            background-color: #E8F5E9;
+            border: 1px solid #228B22;
+            box-sizing: border-box;
+        }
+
+        #login-button {
+            text-align: center;
+            margin: 25px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #228B22;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #006400;
+        }
+
+        #footer {
+            margin-top: auto;
+            background-color: #228B22;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
+
 <body>
 
     <div id="header">
         <h2>USER REGISTRATION SYSTEM</h2>
         <small>Welcome to My Website</small>
-    </div>
-
-    <div id="menu">
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="thankyou.html">Thank You</a>
     </div>
 
     <div id="login-box">
@@ -23,11 +99,12 @@
         </div>
 
         <form action="register.html" method="get">
+
             <div class="form-row">
                 <b>Login Name:</b>
                 <input type="text" name="loginname"
                        placeholder="Enter your name" required>
-         </div>
+            </div>
 
             <div class="form-row">
                 <b>Password:</b>
@@ -38,6 +115,7 @@
             <div id="login-button">
                 <input type="submit" value="Login">
             </div>
+
         </form>
     </div>
 
@@ -47,3 +125,4 @@
 
 </body>
 </html>
+```
